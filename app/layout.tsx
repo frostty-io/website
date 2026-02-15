@@ -21,8 +21,8 @@ const navbar = (
     className="gap-5"
     logo={
       <span className="inline-flex items-center gap-2">
-        <Image src="/images/doggo.png" alt="Doggo logo" width={26} height={26} />
-        <span className="text-base font-extrabold tracking-[0.01em]">Doggo</span>
+        <Image src="/images/doggo.png" alt="Doggo logo" width={32} height={32} />
+        <span className="text-base font-extrabold tracking-tighter">doggo<span className="text-cyan-500">.sh</span></span>
       </span>
     }
   >
@@ -41,7 +41,7 @@ const navbar = (
       </Link>
       <a
         className="inline-flex items-center justify-center rounded-lg p-2 transition hover:bg-black/10 dark:hover:bg-white/10"
-        href="https://github.com/jvz-github/doggo-sh"
+        href="https://github.com/doggo-sh/doggo"
         aria-label="GitHub repository"
       >
         <GitHubIcon height="20" />
@@ -49,8 +49,6 @@ const navbar = (
     </div>
   </Navbar>
 )
-
-const footer = <Footer>MIT {new Date().getFullYear()} © Doggo Contributors.</Footer>
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -61,11 +59,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body className="min-h-screen bg-[radial-gradient(1000px_400px_at_15%_-10%,rgba(20,184,166,0.12),transparent_60%),radial-gradient(900px_420px_at_85%_-20%,rgba(34,211,238,0.12),transparent_60%)]">
         <Layout
           navbar={navbar}
-          footer={footer}
           pageMap={await getPageMap()}
-          docsRepositoryBase="https://github.com/jvz-github/doggo-sh/tree/main"
-          editLink={null}
-          feedback={{ content: null }}
+          docsRepositoryBase="https://github.com/doggo-sh/website/tree/main"
+          editLink={"Edit this page on GitHub"}
           sidebar={{ defaultMenuCollapseLevel: 1 }}
         >
           {children}

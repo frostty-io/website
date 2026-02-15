@@ -4,25 +4,35 @@ title: Installation
 
 # Installation
 
-## Prerequisites
+## macOS Download
 
-- Node.js 20+
-- pnpm 10+
+1. Go to [Doggo Releases](https://github.com/doggo-sh/doggo/releases/latest).
+2. Download the latest macOS artifact (`.dmg` or `.zip`).
+3. If you download `.zip`, extract it and move `Doggo.app` to `Applications`.
+4. If you download `.dmg`, open it and drag Doggo to `Applications`.
 
-## Development
+## First Launch on macOS
 
-```bash
-pnpm install
-pnpm run dev
-```
+1. Open Doggo from `Applications`.
+2. If macOS blocks launch, open **System Settings → Privacy & Security** and click **Open Anyway** for Doggo.
+3. Re-open the app and confirm the prompt.
 
-## Build packages
+## Initial Setup
 
-```bash
-pnpm run package
-pnpm run package:mac
-pnpm run package:win
-pnpm run package:linux
-```
+After launch:
 
-Artifacts are generated in `dist/`.
+1. Open **Settings** (`Cmd + ,`).
+2. Create your first profile (name, shell, and starting directory).
+3. Open a new tab (`Cmd + T`) and verify your shell + working directory are correct.
+
+## Update to New Versions
+
+1. Download the newest macOS build from Releases.
+2. Replace the existing app in `Applications`.
+3. Re-open Doggo; your settings and profiles remain available.
+
+## Next Steps
+
+- [Profiles](/docs/profiles/)
+- [Tabs & Splits](/docs/tabs-splits/)
+- [Keyboard Shortcuts](/docs/keyboard-shortcuts/)
