@@ -5,6 +5,12 @@ export default {
   installation: {
     title: 'Installation'
   },
+  profiles: {
+    title: 'Profiles'
+  },
+  'tabs-splits': {
+    title: 'Tabs & Splits'
+  },
   features: {
     title: 'Features'
   },
