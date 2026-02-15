@@ -5,6 +5,7 @@ import { GitHubIcon } from 'nextra/icons'
 import { Footer, Layout, Navbar } from 'nextra-theme-docs'
 import { Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -69,6 +70,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         >
           {children}
         </Layout>
+        <SpeedInsights />
       </body>
     </html>
   )
