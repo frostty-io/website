@@ -5,14 +5,14 @@ export default {
   installation: {
     title: 'Installation'
   },
+  features: {
+    title: 'Features'
+  },
   profiles: {
     title: 'Profiles'
   },
   'tabs-splits': {
     title: 'Tabs & Splits'
-  },
-  features: {
-    title: 'Features'
   },
   'keyboard-shortcuts': {
     title: 'Keyboard Shortcuts'
