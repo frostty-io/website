@@ -13,7 +13,30 @@ export const metadata: Metadata = {
     default: 'Doggo',
     template: '%s | Doggo'
   },
-  description: 'Cross-platform terminal emulator with vertical tabs, split panes, and smart workflows.'
+  description: 'Cross-platform terminal emulator with vertical tabs, split panes, and smart workflows.',
+  icons: {
+    apple: [
+      {
+        url: '/apple-touch-icon.png',
+        sizes: '180x180',
+        type: 'image/png'
+      }
+    ],
+    icon: [
+      {
+        url: '/favicon-32x32.png',
+        sizes: '32x32',
+        type: 'image/png'
+      },
+      {
+        url: '/favicon-16x16.png',
+        sizes: '16x16',
+        type: 'image/png'
+      }
+    ],
+    shortcut: ['/favicon.ico']
+  },
+  manifest: '/site.webmanifest'
 }
 
 const navbar = (
@@ -22,7 +45,7 @@ const navbar = (
     logo={
       <span className="inline-flex items-center gap-2">
         <Image src="/images/doggo.png" alt="Doggo logo" width={32} height={32} />
-        <span className="text-base font-extrabold tracking-tighter">doggo<span className="text-cyan-500">.sh</span></span>
+        <span className="text-base font-extrabold tracking-tighter">doggo<span className="text-primary">.sh</span></span>
       </span>
     }
   >
@@ -53,7 +76,13 @@ const navbar = (
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" dir="ltr" suppressHydrationWarning>
-      <Head>
+      <Head
+        color={{
+          hue: 188,
+          saturation: 86,
+          lightness: 53
+        }}
+      >
         <meta name="theme-color" content="#0b1220" />
       </Head>
       <body className="min-h-screen bg-[radial-gradient(1000px_400px_at_15%_-10%,rgba(20,184,166,0.12),transparent_60%),radial-gradient(900px_420px_at_85%_-20%,rgba(34,211,238,0.12),transparent_60%)]">

@@ -7,42 +7,71 @@ theme:
   breadcrumb: false
   sidebar: false
   toc: false
+  pagination: false
 ---
 
 # Download Doggo
 
-<div className="not-prose mt-6 grid gap-4 md:grid-cols-3">
-  <a
-    className="block min-h-[220px] rounded-2xl border border-black/10 bg-white/75 p-5 text-inherit no-underline shadow-lg shadow-black/5 transition hover:-translate-y-0.5 hover:border-cyan-400/50 dark:border-white/10 dark:bg-white/5 dark:shadow-black/30"
-    href="https://github.com/doggo-sh/doggo/releases/latest"
-  >
-    <p className="m-0 text-[0.74rem] font-extrabold uppercase tracking-[0.11em] opacity-80">macOS</p>
-    <h3 className="mt-1 mb-2 text-[1.1rem] font-extrabold">Universal DMG + ZIP</h3>
-    <p className="text-[0.94rem] leading-6">Native desktop build for Apple Silicon and Intel.</p>
-    <span className="mt-4 inline-block text-sm font-bold text-cyan-700 dark:text-cyan-300">Get latest release</span>
-  </a>
+<p className="max-w-3xl text-lg">
+  Doggo is available today on macOS. Linux and Windows builds are in progress for future releases.
+</p>
 
-  <a
-    className="block min-h-[220px] rounded-2xl border border-black/10 bg-white/75 p-5 text-inherit no-underline shadow-lg shadow-black/5 transition hover:-translate-y-0.5 hover:border-cyan-400/50 dark:border-white/10 dark:bg-white/5 dark:shadow-black/30"
-    href="https://github.com/doggo-sh/doggo/releases/latest"
-  >
-    <p className="m-0 text-[0.74rem] font-extrabold uppercase tracking-[0.11em] opacity-80">Windows</p>
-    <h3 className="mt-1 mb-2 text-[1.1rem] font-extrabold">NSIS Installer + Portable</h3>
-    <p className="text-[0.94rem] leading-6">Installable and portable packages for x64 and ARM64.</p>
-    <span className="mt-4 inline-block text-sm font-bold text-cyan-700 dark:text-cyan-300">Get latest release</span>
-  </a>
+<div className="not-prose mt-7 grid gap-4 lg:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)]">
+  <div className="rounded-3xl border border-black/10 bg-white/80 p-6 shadow-2xl shadow-black/10 dark:border-white/10 dark:bg-white/5 dark:shadow-black/30">
+    <p className="m-0 inline-flex rounded-full border border-primary/40 bg-primary/10 px-2.5 py-1 text-[0.68rem] font-extrabold uppercase tracking-[0.12em] text-slate-900 dark:text-primary">
+      Available now
+    </p>
+    <h2 className="mt-3 mb-2 text-2xl font-black tracking-tight sm:text-3xl">macOS</h2>
+    <p className="m-0 max-w-2xl text-[0.98rem] leading-7">
+      Download the latest stable release from GitHub. Each release includes a universal DMG and ZIP.
+    </p>
 
-  <a
-    className="block min-h-[220px] rounded-2xl border border-black/10 bg-white/75 p-5 text-inherit no-underline shadow-lg shadow-black/5 transition hover:-translate-y-0.5 hover:border-cyan-400/50 dark:border-white/10 dark:bg-white/5 dark:shadow-black/30"
-    href="https://github.com/doggo-sh/doggo/releases/latest"
-  >
-    <p className="m-0 text-[0.74rem] font-extrabold uppercase tracking-[0.11em] opacity-80">Linux</p>
-    <h3 className="mt-1 mb-2 text-[1.1rem] font-extrabold">AppImage + DEB</h3>
-    <p className="text-[0.94rem] leading-6">Simple setup for modern Linux distributions.</p>
-    <span className="mt-4 inline-block text-sm font-bold text-cyan-700 dark:text-cyan-300">Get latest release</span>
-  </a>
+    <p className="mt-4 mb-0 text-sm opacity-80">
+      Available for Apple Silicon + Intel.
+    </p>
+
+    <div className="mt-5 flex flex-wrap items-center gap-4">
+      <a
+        className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-slate-950 no-underline transition hover:bg-primary/90"
+        href="https://github.com/doggo-sh/doggo/releases/latest"
+      >
+        Download latest release
+      </a>
+      <div className="m-0 flex flex-wrap items-center gap-3 text-sm">
+        <a className="inline-flex font-semibold text-primary no-underline hover:underline" href="/docs/installation/">
+          Installation guide
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div className="grid gap-4">
+    <div
+      aria-disabled="true"
+      className="rounded-2xl border border-black/10 bg-white/70 p-5 opacity-90 dark:border-white/10 dark:bg-white/5"
+    >
+      <p className="m-0 text-[0.74rem] font-extrabold uppercase tracking-[0.11em] opacity-80">Windows</p>
+      <h3 className="mt-1 mb-2 text-[1.1rem] font-extrabold">Planned</h3>
+      <p className="m-0 text-[0.94rem] leading-6">Native installer and portable builds are planned for a future release.</p>
+      <span className="mt-4 inline-flex rounded-md border border-black/15 px-2 py-1 text-xs font-bold uppercase tracking-[0.08em] opacity-80 dark:border-white/15">
+        Coming soon
+      </span>
+    </div>
+
+    <div
+      aria-disabled="true"
+      className="rounded-2xl border border-black/10 bg-white/70 p-5 opacity-90 dark:border-white/10 dark:bg-white/5"
+    >
+      <p className="m-0 text-[0.74rem] font-extrabold uppercase tracking-[0.11em] opacity-80">Linux</p>
+      <h3 className="mt-1 mb-2 text-[1.1rem] font-extrabold">Planned</h3>
+      <p className="m-0 text-[0.94rem] leading-6">AppImage and DEB packages are planned for a future release.</p>
+      <span className="mt-4 inline-flex rounded-md border border-black/15 px-2 py-1 text-xs font-bold uppercase tracking-[0.08em] opacity-80 dark:border-white/15">
+        Coming soon
+      </span>
+    </div>
+  </div>
 </div>
 
-<div className="mt-6">
-  <p>Need source builds or changelogs? Browse all tags and artifacts on <a href="https://github.com/doggo-sh/doggo/releases">GitHub Releases</a>.</p>
-</div>
+## Releases
+
+Need prerelease builds, source artifacts, or changelogs? Use [GitHub Releases](https://github.com/doggo-sh/doggo/releases). If you want platform updates, watch progress in [GitHub Issues](https://github.com/doggo-sh/doggo/issues).
