@@ -10,8 +10,8 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Doggo',
-    template: '%s | Doggo'
+    default: 'Frostty',
+    template: '%s | Frostty'
   },
   description: 'Cross-platform terminal emulator with vertical tabs, split panes, and smart workflows.',
   icons: {
@@ -44,8 +44,8 @@ const navbar = (
     className="gap-5"
     logo={
       <span className="inline-flex items-center gap-2">
-        <Image src="/images/doggo.png" alt="Doggo logo" width={32} height={32} />
-        <span className="text-base font-extrabold tracking-tighter">doggo<span className="text-primary">.sh</span></span>
+        <Image src="/images/logo.png" alt="Frostty logo" width={32} height={32} />
+        <span className="text-base font-extrabold tracking-tighter">frostty<span className="text-primary">.io</span></span>
       </span>
     }
   >
@@ -64,7 +64,7 @@ const navbar = (
       </Link>
       <a
         className="inline-flex items-center justify-center rounded-lg p-2 transition hover:bg-black/10 dark:hover:bg-white/10"
-        href="https://github.com/doggo-sh/doggo"
+        href="https://github.com/frostty-io/frostty"
         aria-label="GitHub repository"
       >
         <GitHubIcon height="20" />
@@ -89,7 +89,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <Layout
           navbar={navbar}
           pageMap={await getPageMap()}
-          docsRepositoryBase="https://github.com/doggo-sh/website/tree/main"
+          docsRepositoryBase="https://github.com/frostty-io/website/tree/main"
           editLink={"Edit this page on GitHub"}
           sidebar={{ defaultMenuCollapseLevel: 1 }}
         >
