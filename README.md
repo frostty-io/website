@@ -1,6 +1,6 @@
-# Doggo Website
+# Frostty Website
 
-Marketing site + docs for Doggo, built with Next.js (TypeScript), Nextra Docs Theme, and Tailwind CSS.
+Marketing site + docs for Frostty, built with Next.js (TypeScript), Nextra Docs Theme, and Tailwind CSS.
 
 ## Local development
 
