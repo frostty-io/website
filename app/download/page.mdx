@@ -1,5 +1,6 @@
 ---
 title: Download
+description: Download Frostty for macOS and install a modern terminal with vertical tabs, split panes, project switching, and built-in git-aware developer workflows.
 type: page
 display: hidden
 theme:
@@ -10,24 +11,51 @@ theme:
   pagination: false
 ---
 
+import { JsonLd } from '../components/json-ld'
+
 # Download Frostty
 
+<JsonLd
+  id="frostty-download-schema"
+  data={{
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'Frostty',
+    applicationCategory: 'DeveloperApplication',
+    operatingSystem: 'macOS',
+    url: 'https://www.frostty.io/download/',
+    downloadUrl: 'https://github.com/frostty-io/frostty/releases/latest',
+    description:
+      'Download Frostty for macOS and install a modern terminal with vertical tabs, split panes, project switching, and built-in git-aware developer workflows.',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock'
+    },
+    potentialAction: {
+      '@type': 'InstallAction',
+      target: 'https://github.com/frostty-io/frostty/releases/latest'
+    }
+  }}
+/>
+
 <p className="max-w-3xl text-lg">
-  Frostty is available today on macOS. Linux and Windows builds are in progress for future releases.
+  {"Frostty is available today on macOS. Linux and Windows builds are in progress for future releases."}
 </p>
 
 <div className="not-prose mt-7 grid gap-4 lg:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)]">
   <div className="rounded-3xl border border-black/10 bg-white/80 p-6 shadow-2xl shadow-black/10 dark:border-white/10 dark:bg-white/5 dark:shadow-black/30">
     <p className="m-0 inline-flex rounded-full border border-primary/40 bg-primary/10 px-2.5 py-1 text-[0.68rem] font-extrabold uppercase tracking-[0.12em] text-slate-900 dark:text-primary">
-      Available now
+      {"Available now"}
     </p>
-    <h2 className="mt-3 mb-2 text-2xl font-black tracking-tight sm:text-3xl">macOS</h2>
+    <h2 className="mt-3 mb-2 text-2xl font-black tracking-tight sm:text-3xl">{"macOS"}</h2>
     <p className="m-0 max-w-2xl text-[0.98rem] leading-7">
-      Download the latest stable release from GitHub. Each release includes a universal DMG and ZIP.
+      {"Download the latest stable release from GitHub. Each release includes a universal DMG and ZIP."}
     </p>
 
     <p className="mt-4 mb-0 text-sm opacity-80">
-      Available for Apple Silicon + Intel.
+      {"Available for Apple Silicon + Intel."}
     </p>
 
     <div className="mt-5 flex flex-wrap items-center gap-4">
@@ -35,11 +63,11 @@ theme:
         className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-slate-950 no-underline transition hover:bg-primary/90"
         href="https://github.com/frostty-io/frostty/releases/latest"
       >
-        Download latest release
+        {"Download latest release"}
       </a>
       <div className="m-0 flex flex-wrap items-center gap-3 text-sm">
         <a className="inline-flex font-semibold text-primary no-underline hover:underline" href="/docs/installation/">
-          Installation guide
+          {"Installation guide"}
         </a>
       </div>
     </div>
@@ -50,11 +78,11 @@ theme:
       aria-disabled="true"
       className="rounded-2xl border border-black/10 bg-white/70 p-5 opacity-90 dark:border-white/10 dark:bg-white/5"
     >
-      <p className="m-0 text-[0.74rem] font-extrabold uppercase tracking-[0.11em] opacity-80">Windows</p>
-      <h3 className="mt-1 mb-2 text-[1.1rem] font-extrabold">Planned</h3>
-      <p className="m-0 text-[0.94rem] leading-6">Native installer and portable builds are planned for a future release.</p>
+      <p className="m-0 text-[0.74rem] font-extrabold uppercase tracking-[0.11em] opacity-80">{"Windows"}</p>
+      <h3 className="mt-1 mb-2 text-[1.1rem] font-extrabold">{"Planned"}</h3>
+      <p className="m-0 text-[0.94rem] leading-6">{"Native installer and portable builds are planned for a future release."}</p>
       <span className="mt-4 inline-flex rounded-md border border-black/15 px-2 py-1 text-xs font-bold uppercase tracking-[0.08em] opacity-80 dark:border-white/15">
-        Coming soon
+        {"Coming soon"}
       </span>
     </div>
 
@@ -62,11 +90,11 @@ theme:
       aria-disabled="true"
       className="rounded-2xl border border-black/10 bg-white/70 p-5 opacity-90 dark:border-white/10 dark:bg-white/5"
     >
-      <p className="m-0 text-[0.74rem] font-extrabold uppercase tracking-[0.11em] opacity-80">Linux</p>
-      <h3 className="mt-1 mb-2 text-[1.1rem] font-extrabold">Planned</h3>
-      <p className="m-0 text-[0.94rem] leading-6">AppImage and DEB packages are planned for a future release.</p>
+      <p className="m-0 text-[0.74rem] font-extrabold uppercase tracking-[0.11em] opacity-80">{"Linux"}</p>
+      <h3 className="mt-1 mb-2 text-[1.1rem] font-extrabold">{"Planned"}</h3>
+      <p className="m-0 text-[0.94rem] leading-6">{"AppImage and DEB packages are planned for a future release."}</p>
       <span className="mt-4 inline-flex rounded-md border border-black/15 px-2 py-1 text-xs font-bold uppercase tracking-[0.08em] opacity-80 dark:border-white/15">
-        Coming soon
+        {"Coming soon"}
       </span>
     </div>
   </div>

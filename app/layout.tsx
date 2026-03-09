@@ -5,15 +5,40 @@ import { GitHubIcon } from 'nextra/icons'
 import { Footer, Layout, Navbar } from 'nextra-theme-docs'
 import { Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { SpeedInsights } from '@vercel/speed-insights/next'
+import {
+  DEFAULT_OG_IMAGE,
+  SITE_NAME,
+  SITE_URL,
+  getDefaultRobotsDirectives,
+  toAbsoluteUrl
+} from '../lib/seo'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Frostty',
+    default: SITE_NAME,
     template: '%s | Frostty'
   },
-  description: 'Cross-platform terminal emulator with vertical tabs, split panes, and smart workflows.',
+  description:
+    'Frostty is a modern terminal for macOS with vertical tabs, split panes, project switching, and git-aware workflows built for fast engineering teams.',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    siteName: SITE_NAME,
+    images: [
+      {
+        url: toAbsoluteUrl(DEFAULT_OG_IMAGE),
+        alt: 'Frostty terminal interface preview'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: [toAbsoluteUrl(DEFAULT_OG_IMAGE)]
+  },
+  robots: getDefaultRobotsDirectives(),
   icons: {
     apple: [
       {

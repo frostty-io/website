@@ -1,5 +1,6 @@
 ---
 title: Frostty
+description: Frostty is a modern macOS terminal with vertical tabs, split panes, project switching, and git-aware controls built for fast engineering workflows.
 type: page
 display: hidden
 theme:
@@ -11,21 +12,38 @@ theme:
   copyPage: false
 ---
 
+import { JsonLd } from './components/json-ld'
 
-  <h1 className="mb-4 text-4xl font-black tracking-tight sm:text-5xl">Frostty is a modern terminal built for fast engineering workflows.</h1>
+<JsonLd
+  id="frostty-home-schema"
+  data={{
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'Frostty',
+    applicationCategory: 'DeveloperApplication',
+    operatingSystem: 'macOS',
+    softwareHelp: 'https://www.frostty.io/docs/',
+    downloadUrl: 'https://github.com/frostty-io/frostty/releases/latest',
+    url: 'https://www.frostty.io/',
+    description:
+      'Frostty is a modern macOS terminal with vertical tabs, split panes, project switching, and git-aware controls built for fast engineering workflows.'
+  }}
+/>
 
-  <p className="mb-6 max-w-3xl text-lg">Vertical tabs, split panes, project switching, and git-aware controls in one desktop app. Built for teams that live in the shell.</p>
+<h1 className="mb-4 text-4xl font-black tracking-tight sm:text-5xl">Frostty is a modern terminal built for fast engineering workflows.</h1>
 
-  <div className="mb-8 flex flex-wrap gap-3">
-    <a className="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-primary/90" href="/docs/">
-      Read docs
-    </a>
-    <a className="rounded-md border border-black/20 bg-white/80 px-4 py-2 text-sm font-semibold transition hover:bg-white dark:border-white/15 dark:bg-white/5 dark:hover:bg-white/10" href="/docs/installation/">
-      Install
-    </a>
-  </div>
+<p className="mb-6 max-w-3xl text-lg">Vertical tabs, split panes, project switching, and git-aware controls in one desktop app. Built for teams that live in the shell.</p>
 
-  <img src="/images/screenshot.png" alt="Frostty screenshot" className="w-full rounded-3xl border border-black/10 shadow-2xl shadow-black/40 dark:border-white/10" />
+<div className="mb-8 flex flex-wrap gap-3">
+  <a className="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-primary/90" href="/docs/">
+    Read docs
+  </a>
+  <a className="rounded-md border border-black/20 bg-white/80 px-4 py-2 text-sm font-semibold transition hover:bg-white dark:border-white/15 dark:bg-white/5 dark:hover:bg-white/10" href="/docs/installation/">
+    Install
+  </a>
+</div>
+
+<img src="/images/screenshot.png" alt="Frostty screenshot" className="w-full rounded-3xl border border-black/10 shadow-2xl shadow-black/40 dark:border-white/10" />
 
 ## Why Frostty
 
