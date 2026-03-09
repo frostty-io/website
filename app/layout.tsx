@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: '%s | Frostty'
   },
   description:
-    'Frostty is a modern terminal for macOS with vertical tabs, split panes, project switching, and git-aware workflows built for fast engineering teams.',
+    'Frostty is a macOS terminal with vertical tabs, split panes, project switching, and git-aware workflows for engineering teams.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
